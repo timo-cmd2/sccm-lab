@@ -16,3 +16,18 @@ Some of my scripts, regfiles, gpos and miscellaneous files for my sccm testing l
 - Deployment (install/uninstall) with docker
 - Serverless Distribution-Points
   - **No local package storage** using wget and cURL/temp
+
+## A sample SCCM package
+
+```yaml
+todo
+```
+
+### Filestructure
+
+```
+```
+
+## Licensing
+
+Copyright (C) 2020 - 2021 Timo Sarkar <sartimo10@gmail.com>
