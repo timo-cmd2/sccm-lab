@@ -62,6 +62,12 @@ knownerrcodes:
 
 **./samplepackage** is just the root folder, where the wget client fetched the sources. **Installer.exe** and **uninstall.exe** are the program's installation executables, which are used for the installation. **Package.yaml** is the serialization file for fetching important indexed strings quickly. It is the main configuration file for a sccm package in my env. At point of distribution, you do not need to touch this file cuz it's beeing managed by the **Scaffold.ps1** Scaffold.ps1 contains all of the deployment methods, used to deliver the package to the end users.
 
+## Usage with a task-sequence
+
+In the case, when you wan't to stage a computer from base pxe, you will need to create a seperate task-sequence with the sources of the wget registries. After choosing pxe in the boot menu, the computer will fetch the windows NT drivers and then you will be prompted by the task wizard. After completing the authentication, the NT will switch to the base image and will install the wget regs by using **scaffold.ps1**. All sources are beeing fetched from the official wget registries and are not stored on the distribution point locally.
+
+> Note: All of the above ideas are still just concepts. I am working on the core logic, so don't expetc too much yet!
+
 ## Licensing
 
 Copyright (C) 2020 - 2021 Timo Sarkar <sartimo10@gmail.com>
