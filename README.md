@@ -51,7 +51,16 @@ knownerrcodes:
 ### Filestructure
 
 ```
+./samplepackage
+├─── ./installer.exe 
+├─── ./uninstall.exe
+├─── ./Package.yaml
+└─── ./Scaffold.ps1
 ```
+
+## Architecture 
+
+**./samplepackage** is just the root folder, where the wget client fetched the sources. **Installer.exe** and **uninstall.exe** are the program's installation executables, which are used for the installation. **Package.yaml** is the serialization file for fetching important indexed strings quickly. It is the main configuration file for a sccm package in my env. At point of distribution, you do not need to touch this file cuz it's beeing managed by the **Scaffold.ps1** Scaffold.ps1 contains all of the deployment methods, used to deliver the package to the end users.
 
 ## Licensing
 
