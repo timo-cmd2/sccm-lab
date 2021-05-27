@@ -16,11 +16,11 @@ targetfiles:
 commands:
   install:
     name: "#CURRENTDIR#/installer.exe"
-    args: "/silent /norestart"
+    arguments: "/silent /norestart"
 
   uninstall:
     name: "#CURRENTDIR#/uninstall.exe
-    args: "/silent /norestart"
+    arguments: "/silent /norestart"
 
 knownerrcodes:
   success: 0, 310
