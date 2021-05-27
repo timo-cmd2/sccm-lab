@@ -1,0 +1,26 @@
+name: Foopackage
+description: A sample SCCM package with serverless arch and yaml
+manufacturer: Timo Sarkar 
+
+# optional
+language: English
+
+# optional
+version: 0.0.1
+
+# Fixme: global vars for currentdir
+targetfiles:
+  install: #CURRENTDIR#\installer.exe
+  uninstall: #CURRENTDIR#\uninstall.exe
+
+commands:
+  install:
+    name: "#CURRENTDIR#\installer.exe"
+    args: "/silent /norestart"
+
+  uninstall:
+    name: "#CURRENTDIR#\uninstall.exe
+    args: "/silent /norestart"
+
+knownerrcodes:
+  success: 0, 310
