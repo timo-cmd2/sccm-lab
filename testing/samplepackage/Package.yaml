@@ -19,7 +19,7 @@ commands:
     arguments: "/silent /norestart"
 
   uninstall:
-    name: "#CURRENTDIR#/uninstall.exe
+    name: "#CURRENTDIR#/uninstall.exe"
     arguments: "/silent /norestart"
 
 knownerrcodes:
