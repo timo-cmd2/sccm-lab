@@ -14,3 +14,4 @@ Some of my scripts, regfiles, gpos and miscellaneous files for my sccm testing l
 - Testing PXE-boot on docker images
 - Managing fake clients using docker and sccm collections with wmi filters
 - Deployment (install/uninstall) with docker
+- Serverless Distribution-Points
