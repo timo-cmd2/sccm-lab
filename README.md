@@ -20,7 +20,32 @@ Some of my scripts, regfiles, gpos and miscellaneous files for my sccm testing l
 ## A sample SCCM package
 
 ```yaml
-todo
+name: Foopackage
+description: A sample SCCM package with serverless arch and yaml
+manufacturer: Timo Sarkar 
+
+# optional
+language: English
+
+# optional
+version: 0.0.1
+
+# Fixme: global vars for currentdir
+targetfiles:
+  install: "#CURRENTDIR#/installer.exe"
+  uninstall: "#CURRENTDIR#/uninstall.exe"
+
+commands:
+  install:
+    name: "#CURRENTDIR#/installer.exe"
+    arguments: "/silent /norestart"
+
+  uninstall:
+    name: "#CURRENTDIR#/uninstall.exe"
+    arguments: "/silent /norestart"
+
+knownerrcodes:
+  success: 0, 310
 ```
 
 ### Filestructure
