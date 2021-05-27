@@ -10,16 +10,16 @@ version: 0.0.1
 
 # Fixme: global vars for currentdir
 targetfiles:
-  install: #CURRENTDIR#\installer.exe
-  uninstall: #CURRENTDIR#\uninstall.exe
+  install: #CURRENTDIR#/installer.exe
+  uninstall: #CURRENTDIR#/uninstall.exe
 
 commands:
   install:
-    name: "#CURRENTDIR#\installer.exe"
+    name: "#CURRENTDIR#/installer.exe"
     args: "/silent /norestart"
 
   uninstall:
-    name: "#CURRENTDIR#\uninstall.exe
+    name: "#CURRENTDIR#/uninstall.exe
     args: "/silent /norestart"
 
 knownerrcodes:
