@@ -10,8 +10,8 @@ version: 0.0.1
 
 # Fixme: global vars for currentdir
 targetfiles:
-  install: #CURRENTDIR#/installer.exe
-  uninstall: #CURRENTDIR#/uninstall.exe
+  install: "#CURRENTDIR#/installer.exe"
+  uninstall: "#CURRENTDIR#/uninstall.exe"
 
 commands:
   install:
