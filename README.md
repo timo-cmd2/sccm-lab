@@ -5,6 +5,7 @@ Some of my scripts, regfiles, gpos and miscellaneous files for my sccm testing l
 - custom packaging logic using wget and yaml
 - setup mssql server
 - testing environment using docker
+- deployment on unreachable client will end with a wake-on-lan forcer
 - more to follow **wip**...
 
 ## Concepts I'm trying to get work
@@ -12,6 +13,7 @@ Some of my scripts, regfiles, gpos and miscellaneous files for my sccm testing l
 - SAP 32bit on Ubuntu
 - Custom Office deployments
 - Testing PXE-boot on docker images
+- deployment on unreachable client will end with a wake-on-lan forcer
 - Managing fake clients using docker and sccm collections with wmi filters
 - Deployment (install/uninstall) with docker
 - Serverless Distribution-Points
