@@ -3,4 +3,5 @@
 ```bash
 vagrant init gusztavvargadr/windows-10
 vagrant up
+vagrant ssh
 ```
