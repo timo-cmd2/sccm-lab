@@ -4,7 +4,7 @@ Some of my scripts, regfiles, gpos and miscellaneous files for my sccm testing l
 - setup winsrv 2012 R2 iso
 - custom packaging logic using wget and yaml
 - setup mssql server
-- testing environment using docker
+- testing environment using vagrant 
 - deployment on unreachable client will end with a wake-on-lan forcer
 - more to follow **wip**...
 
